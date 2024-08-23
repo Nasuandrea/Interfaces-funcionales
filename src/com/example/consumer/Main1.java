@@ -14,8 +14,8 @@ public class Main1 {
         };
 
         printer.accept("Hola!");
-
-        //Lambdas : permiten implementar metodos abstractos que estan en interfaces que sólo tienen un método abstracto
+        //Lambdas: proporcionas el cuerpo de un método directamente
+        //Lambdas : permiten implementar metodos que estan en interfaces que tienen un solo método abstracto
         Consumer<String> printer1 = message -> System.out.println(message);
         Consumer<String> printer2 = message -> System.out.println(message);
 

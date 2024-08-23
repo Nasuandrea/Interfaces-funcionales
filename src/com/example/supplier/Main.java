@@ -1,6 +1,8 @@
 package com.example.supplier;
 
+import java.sql.SQLOutput;
 import java.util.Random;
+import java.util.UUID;
 import java.util.function.Supplier;
 
 public class Main {
@@ -12,5 +14,9 @@ public class Main {
         System.out.println("Número aleatorio: " + generator.get());
 
         Supplier<Double> generator2= () -> new Random().nextDouble(500+1);
+        System.out.println("Número aleatorio: " + generator2.get());
+
+        Supplier<String> uuidGenerator = () -> UUID.randomUUID().toString();
+        System.out.println("UUID generada: " + uuidGenerator.get());
     }
 }

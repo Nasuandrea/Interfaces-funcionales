@@ -21,7 +21,11 @@ public class Main {
 
         //2 argumentos, usamos Bifucntion que tiene dos parametros de entrada y uno de salida
 
-        BiFunction<String, Integer, Employee> employee2 = Employee::new;
-        System.out.println(employee2.apply("Jose", 35).toString());
+        BiFunction<String, Integer, Employee> employee2 = (name, age) -> new Employee(name, age);
+        System.out.println("Con lambda " + employee2.apply("Jose", 35).toString());
+
+        BiFunction<String, Integer, Employee> employee3 = Employee::new;
+        System.out.println("Con metodo de referencia" + employee3.apply("María", 33).toString());
+
     }
 }

@@ -11,11 +11,7 @@ public class Main {
         Predicate<Integer> predicate = num -> positiveNumber.isPositive(num);
 
         Predicate<Integer> predicate1 = positiveNumber::isPositive;
-
-
     }
-
-
 }
 class PositiveNumber{
     public boolean isPositive(int num){

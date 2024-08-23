@@ -18,5 +18,8 @@ public class Main {
 
         Supplier<String> uuidGenerator = () -> UUID.randomUUID().toString();
         System.out.println("UUID generada: " + uuidGenerator.get());
+
+        Supplier<Person> personGenerator= () -> new Person("Andrea");
+        System.out.println("Persona generada: " + personGenerator.get().toString());
     }
 }

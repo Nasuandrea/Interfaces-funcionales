@@ -1,6 +1,5 @@
-package com.example.suplier;
+package com.example.supplier;
 
-import java.util.Date;
 import java.util.Random;
 import java.util.function.Supplier;
 
